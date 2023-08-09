@@ -7,7 +7,7 @@ const PostCreate = () => {
     const onSubmit = async (e) => {
         e.preventDefault();
 
-        await axios.post('http://posts-srv:4000/posts', {
+        await axios.post('http://kubernetes.docker.internal/posts/create', {
             title
         });
 
